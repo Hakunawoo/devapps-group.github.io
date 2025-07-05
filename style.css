@@ -1,24 +1,61 @@
 /* Import a tech-like font */
 body {
-  margin: 0;
+  padding: 160px;
   font-family: 'Share Tech Mono', monospace;
   background-color: #ffffff;
   color: #000000;
   line-height: 1.6;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 160px;
+}
+
 header {
-  background: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #03719C; /* marine blue */
   color: #ffffff;
-  padding: 20px 0;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.navbar img.logo {
+  height: 80px;
+  width: auto;
+  margin-bottom: 15px;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.navbar nav a {
+  color: #00C896; /* green accent */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #FF4F81; /* pink accent */
 }
 
 header .container {
+  max-width: 1100px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1100px;
-  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -29,14 +66,15 @@ header h1 {
 }
 
 nav a {
-  color: #00C896;
+  color: #00C896; /* green accent */
   text-decoration: none;
   margin-left: 20px;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #FF4F81;
+  color: #FF4F81; /* pink accent */
 }
 
 .logo {
@@ -45,53 +83,75 @@ nav a:hover {
 }
 
 .hero {
-  background: #00C896;
+  background: linear-gradient(
+      rgba(3, 113, 156, 0.7),
+      rgba(0, 200, 150, 0.7)
+    ),
+    url('your-background.jpg') center/cover no-repeat;
   color: #ffffff;
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
 }
 
 .hero h2 {
   font-size: 48px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 section {
-  padding: 60px 20px;
   max-width: 1000px;
   margin: auto;
+  padding: 80px 20px;
 }
 
 section h2 {
-  color: #00C896;
+  color: #03719C;
   font-size: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-.project {
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
   background: #f9f9f9;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 30px;
   border-left: 5px solid #00C896;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #03719C;
 }
 
 form input,
 form textarea {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
+  padding: 14px;
+  margin-bottom: 20px;
   border: 2px solid #000000;
   border-radius: 4px;
   font-family: 'Share Tech Mono', monospace;
 }
 
 form button {
-  background: #00C896;
+  background: #03719C;
   color: #ffffff;
   border: none;
-  padding: 12px 20px;
+  padding: 14px 28px;
   cursor: pointer;
   font-size: 16px;
+  transition: background 0.3s;
 }
 
 form button:hover {
@@ -102,5 +162,6 @@ footer {
   background: #000000;
   color: #ffffff;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
+  margin-top: 50px;
 }
