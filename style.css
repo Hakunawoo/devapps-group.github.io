@@ -62,3 +62,9 @@ footer a {
   margin: 0 5px;
   text-decoration: none;
 }
+
+.logo {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
