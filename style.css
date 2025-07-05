@@ -1,15 +1,17 @@
 /* Import a tech-like font */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 160px;
+}
+
 body {
-  padding: 160px;
+  margin: 0;
+  padding-top: 160px; /* only TOP padding for fixed navbar */
   font-family: 'Share Tech Mono', monospace;
   background-color: #ffffff;
   color: #000000;
   line-height: 1.6;
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 160px;
+  overflow-x: hidden;
 }
 
 header {
@@ -48,38 +50,6 @@ header {
 
 .navbar nav a:hover {
   color: #FF4F81; /* pink accent */
-}
-
-header .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 28px;
-  letter-spacing: 1px;
-}
-
-nav a {
-  color: #00C896; /* green accent */
-  text-decoration: none;
-  margin-left: 20px;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #FF4F81; /* pink accent */
-}
-
-.logo {
-  height: 50px;
-  width: auto;
 }
 
 .hero {
@@ -164,4 +134,33 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 50px;
+}
+
+/* ✅ MOBILE FIXES BELOW ✅ */
+@media (max-width: 600px) {
+  body {
+    padding-top: 120px;
+  }
+  .navbar img.logo {
+    height: 50px;
+  }
+  .navbar nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .navbar nav a {
+    font-size: 16px;
+  }
+  .hero h2 {
+    font-size: 32px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+  section {
+    padding: 40px 20px;
+  }
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
 }
