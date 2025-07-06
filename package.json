@@ -1,0 +1,25 @@
+{
+  "name": "devapps-group.github.io",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hakunawoo/devapps-group.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hakunawoo/devapps-group.github.io/issues"
+  },
+  "homepage": "https://github.com/Hakunawoo/devapps-group.github.io#readme",
+  "description": "",
+  "dependencies": {
+    "@azure/identity": "^4.10.2",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.4"
+  }
+}

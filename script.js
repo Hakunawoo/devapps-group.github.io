@@ -22,3 +22,24 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
       }
     });
   });
+
+  document.getElementById("contactForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData.entries());
+
+    const response = await fetch("https://contact-form-backend-x6w6.onrender.com/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(data)
+        });
+
+    if (response.ok) {
+      window.location.href = "/thank-you.html";
+    } else {
+      alert("Something went wrong.");
+    }
+  });
