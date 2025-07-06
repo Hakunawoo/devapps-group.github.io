@@ -138,6 +138,10 @@ footer {
 
 /* ✅ MOBILE FIXES BELOW ✅ */
 @media (max-width: 600px) {
+  section {
+    max-width: 100%;
+    padding: 40px 15px;
+  }
   body {
     padding-top: 120px;
   }
@@ -155,6 +159,8 @@ footer {
     font-size: 32px;
   }
   .hero p {
+    max-width: 100%;
+    padding: 0 10px;
     font-size: 16px;
   }
   section {
@@ -162,5 +168,9 @@ footer {
   }
   .portfolio-grid {
     grid-template-columns: 1fr;
+  }
+
+  html {
+    max-width: 100%;
   }
 }
