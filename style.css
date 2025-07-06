@@ -138,12 +138,9 @@ footer {
 
 /* ✅ MOBILE FIXES BELOW ✅ */
 @media (max-width: 600px) {
-  section {
-    max-width: 100%;
-    padding: 40px 15px;
-  }
   body {
     padding-top: 120px;
+    margin: 0;
   }
   .navbar img.logo {
     height: 50px;
@@ -164,6 +161,8 @@ footer {
     font-size: 16px;
   }
   section {
+    max-width: 100%;
+    margin: 0;
     padding: 30px 20px;
   }
   .portfolio-grid {
