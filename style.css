@@ -1,19 +1,34 @@
-/* Import a tech-like font */
+/* ✅ Global Reset and Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* ✅ Smooth Scrolling */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 160px;
 }
 
+/* ✅ Base Body Styling */
 body {
-  margin: 0;
-  padding-top: 160px; /* only TOP padding for fixed navbar */
+  padding-top: 160px;
   font-family: 'Share Tech Mono', monospace;
   background-color: #ffffff;
   color: #000000;
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
+/* ✅ Header */
 header {
   position: fixed;
   top: 0;
@@ -25,6 +40,7 @@ header {
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   z-index: 9999;
+  overflow-x: hidden;
 }
 
 .navbar img.logo {
@@ -52,6 +68,7 @@ header {
   color: #FF4F81; /* pink accent */
 }
 
+/* ✅ Hero Section */
 .hero {
   background: linear-gradient(
       rgba(3, 113, 156, 0.7),
@@ -61,6 +78,7 @@ header {
   color: #ffffff;
   text-align: center;
   padding: 120px 20px;
+  overflow-x: hidden;
 }
 
 .hero h2 {
@@ -74,10 +92,13 @@ header {
   margin: 0 auto;
 }
 
+/* ✅ Sections */
 section {
+  width: 100%;
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
   padding: 80px 20px;
+  overflow-x: hidden;
 }
 
 section h2 {
@@ -86,17 +107,21 @@ section h2 {
   margin-bottom: 30px;
 }
 
+/* ✅ Portfolio Grid */
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
+  overflow-x: hidden;
 }
 
+/* ✅ Card Styles */
 .card {
   background: #f9f9f9;
   padding: 30px;
   border-left: 5px solid #00C896;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
 }
 
 .card h3 {
@@ -104,6 +129,7 @@ section h2 {
   color: #03719C;
 }
 
+/* ✅ Form Styles */
 form input,
 form textarea {
   width: 100%;
@@ -128,12 +154,14 @@ form button:hover {
   background: #FF4F81;
 }
 
+/* ✅ Footer */
 footer {
   background: #000000;
   color: #ffffff;
   text-align: center;
   padding: 20px;
   margin-top: 50px;
+  overflow-x: hidden;
 }
 
 /* ✅ MOBILE FIXES BELOW ✅ */
@@ -142,34 +170,38 @@ footer {
     padding-top: 120px;
     margin: 0;
   }
+
   .navbar img.logo {
     height: 50px;
   }
+  
   .navbar nav {
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
   }
+  
   .navbar nav a {
     font-size: 16px;
   }
+  
   .hero h2 {
     font-size: 32px;
   }
+  
   .hero p {
     max-width: 100%;
-    padding: 0;
+    padding: 0 10px;
     font-size: 16px;
   }
+  
   section {
     max-width: 100%;
+    width: 100%;
     margin: 0;
-    padding: 30px 20px;
+    padding: 40px 10px;
   }
+  
   .portfolio-grid {
     grid-template-columns: 1fr;
-  }
-
-  html {
-    max-width: 100%;
   }
 }
