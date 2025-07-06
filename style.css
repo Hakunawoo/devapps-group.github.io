@@ -115,6 +115,17 @@ section h2 {
   overflow-x: hidden;
 }
 
+#languageSwitcher {
+  background: #03719C;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 /* ✅ Card Styles */
 .card {
   background: #f9f9f9;

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DEVAPPS GROUP</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <img src="logoos.png" alt="DEVAPPS GROUP Logo" class="logo" />
+      <nav>
+        <a href="#home">Acceuil</a>
+        <a href="#about">À propos</a>
+        <a href="#our-projects">Nos projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <select id="languageSwitcher">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+      </select>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Nous créons des expériences numériques</h2>
+    <p>Des solutions innovantes pour le marché haïtien et mondial.</p>
+  </section>
+
+  <section id="about">
+    <h2>À propos</h2>
+    <p>Chez <strong>DEVAPPS</strong>, nous pensons que l’apprentissage doit être une aventure à la fois amusante et enrichissante.
+      Nous sommes déterminés à créer des applications innovantes qui captivent les utilisateurs grâce à des expériences engageantes,
+      tout en les aidant à découvrir de nouvelles compétences et connaissances. Au-delà du divertissement et de l’éducation,
+      notre mission consiste à développer des produits durables qui créent de la valeur — à la fois pour nos utilisateurs et pour notre entreprise —
+      afin que créativité, croissance et succès financier aillent de pair.</p>
+  </section>
+
+  <section id="our-projects">
+    <h2>Nos projets</h2>
+    <div class="portfolio-grid">
+      <div class="card">
+        <h3>LOJIK</h3>
+        <p><strong>Lancement prévu:</strong> D’ici fin 2025</p>
+        <p><strong>LOJIK</strong>  allie divertissement et véritable opportunité. C’est un jeu mobile où les joueurs résolvent des énigmes
+          logiques stimulantes et s’affrontent dans des tournois en direct pour gagner des jetons, débloquer des récompenses exclusives,
+          et grimper dans les classements. Bien plus qu’un simple jeu, LOJIK offre une expérience engageante qui permet aux utilisateurs
+          d’aiguiser leur esprit tout en ayant la possibilité de générer une valeur réelle, fusionnant ainsi le plaisir du jeu et le potentiel économique dans une aventure passionnante.</p>
+          <p><strong><i>“Pensez vite, gagnez intelligemment !”</i></strong></p>
+      </div>
+      <!-- Add more projects as you grow -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+    <p>Vous avez une idée ou souhaitez collaborer ? Entrons en contact !</p>
+    <form id="contactForm">
+      <input type="text" placeholder="Votre nom" required />
+      <input type="email" placeholder="Votre e-mail" required />
+      <textarea placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyez le message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DEVAPPS GROUP. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
