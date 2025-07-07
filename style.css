@@ -178,7 +178,7 @@ footer {
 /* ✅ MOBILE FIXES BELOW ✅ */
 @media (max-width: 600px) {
   body {
-    padding-top: 120px;
+    padding-top: 150px;
     margin: 0;
   }
   .navbar img.logo {
